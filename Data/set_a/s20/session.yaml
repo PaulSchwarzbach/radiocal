@@ -1,0 +1,40 @@
+session_id: s20
+campaign: set_a
+motion: quasi_static_point
+t_start: null
+t_end: null
+sources:
+- path: dyn_p20.log
+  role: ranges
+  sha256: 9af06ac41b7fadbef2293cd4057310e64b36aca579d4d8e27e0f0a9bc1a11375
+clock:
+  reference: null
+  note: records carry no timestamps; use seq for epoch ordering
+counts:
+  range_epochs: 213
+  directed_ranges: 19878
+  dropped_invalid: 20
+  truth_poses: 1
+notes:
+- roving tag 8B05 on a tripod at surveyed marker P20; other nodes static
+node_overrides:
+- id: 8B05
+  role: mobile
+  prior:
+    type: none
+truth_quality: verified
+verification:
+  screen:
+    method: robust_multilateration_xy_vs_marker
+    deviation_m: 0.36
+    passed: true
+  range_test:
+    method: range_residuals_vs_marker
+    tag_height_above_marker_m: 1.72
+    median_los_residual_m: 0.2
+    n_los_links: 9
+    n_links: 11
+    reference_range_m:
+    - 0.158
+    - 0.251
+    passed: true

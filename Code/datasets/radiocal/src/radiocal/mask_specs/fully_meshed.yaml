@@ -1,0 +1,12 @@
+name: fully_meshed
+description: >
+  Fully-meshed anchor self-calibration view (MDS / blind SNL setting):
+  anchor<->anchor ranges only, mobile-node edges masked out, no positional
+  priors. Evaluation: anchor RMSE against surveyed coordinates after a
+  rigid (Procrustes) alignment, reflections allowed, on the unmasked superset.
+edges:
+  keep:
+    - {from_role: anchor, to_role: anchor}
+  thin: null
+priors: none
+groundtruth: none

@@ -1,0 +1,6 @@
+campaign,session,variant,sigma_mult,sigma_m,rmse_m
+set_b,s03,cauchy,0.2500,0.0324,0.2259
+set_b,s03,cauchy,0.5000,0.0647,0.2228
+set_b,s03,cauchy,1.0000,0.1294,0.2258
+set_b,s03,cauchy,2.0000,0.2589,0.2321
+set_b,s03,cauchy,4.0000,0.5178,0.2527

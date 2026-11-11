@@ -1,0 +1,14 @@
+name: multi_hop
+description: >
+  Multi-hop / sparse-mesh view: anchor<->anchor ranges thinned to each
+  anchor's 3 nearest neighbours (by median measured range), emulating a
+  limited-radio-range network where calibration information must propagate
+  over several hops. Same minimal prior subset as mobile_assisted.
+edges:
+  keep:
+    - {from_role: anchor, to_role: anchor}
+  thin:
+    anchor_anchor_knn: 3
+priors:
+  subset: ["5BB6", "4A23", "8B05"]
+groundtruth: none

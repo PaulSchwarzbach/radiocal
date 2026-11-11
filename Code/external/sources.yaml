@@ -1,0 +1,61 @@
+# Public sources of the benchmark run on public data (fetched 2026-10-07).
+# ext_root is a user setting: a folder outside any synced or versioned tree.
+# Fetched once into EXT_ROOT/raw/<dir>/ (fresh directory per source), never
+# redistributed. Paths below are relative to EXT_ROOT/raw. Downloaded code is
+# read as text only and never executed.
+ext_root: ~/Documents/Code/radiocal_external
+fetched: '2026-10-07'
+sources:
+  twr_cloud_bern_v5:
+    citation_key: xenakis_cooperative_2026
+    record: https://zenodo.org/records/20277908
+    doi: 10.5281/zenodo.20277908
+    version: 5
+    licence: MIT (Zenodo metadata)
+    files:
+      - path: twr_cloud_bern_v5/40-agents.json
+        md5: fdb29a3acf0a4d64427a363385d8d6ee
+        sha256: c9bc1fb33523dc60cd1c5bccad2c9203d162b6e16c211e842b3916ba45d96601
+        use: data (json.load only)
+      - path: twr_cloud_bern_v5/EvalScenarioParser.py
+        md5: c24c6bcabc5aa857b2c920fd6ab3bccf
+        sha256: 6a2ab62ec5f3fe289bbc8d60ade7c0298e17269eec6841bb336f863a6543431b
+        use: read as text (JSON layout)
+      - path: twr_cloud_bern_v5/reproduce_twr_cloud_bern_release.py
+        md5: 4ec58b37eb90c2b459240edef63a89a7
+        sha256: ac9e8a19ef1976f541c99e14db5e861ec941b21adb816782be82fbf83ec04c49
+        use: read as text (units, sampling, speed of light in air)
+      - path: twr_cloud_bern_v5/score_twr_cloud_bern.py
+        md5: dce91f7dcd472f4cfbabb46f1c49e012
+        sha256: 0068d72b94db6b1c40414829390025a3b2b12e9b9d1fd7d939fff5fc97659073
+        use: read as text (scoring convention)
+      - path: twr_cloud_bern_v5/TWR CLOUD Bern Registration Report.pdf
+        md5: 023b2fb79d80cb8f3281cac37c5a7cbb
+        sha256: 8660e9f26a71e3ec20a5a0c58fbbfbea52f17e189d29a0cc803e202764d61733
+        use: survey registration accuracy
+    never_fetched: [Rangings at Pollers.pkl, Rangings at Responders.pkl,
+                    Rangings at Pollers (Stats).pkl, Rangings at Responders (Stats).pkl,
+                    TWR-CLOUD Bern Eval Scenarios.zip, Engehalde_1st_Unibe.las,
+                    PotreeLASViewer.exe, EvalScenarioParser.java,
+                    TWR-Cloud-Bern technical guide.pdf]
+  selfloc_39c1271:
+    citation_key: corbalan_self-localization_2023
+    repository: https://github.com/d3s-trento/selfloc
+    commit: 39c127198a5247dda60e7e711969a286053bac35
+    licence: none stated (analysis only; nothing redistributed)
+    files:
+      - path: selfloc_39c1271/data/department/sstwr.csv
+        sha256: afa5682d25340a7f2141152ebf031463e2360ca7b7552b35eb5aabfff432d250
+      - path: selfloc_39c1271/data/reception/sstwr.csv
+        sha256: 93e68ebc9eae00f347118874c617a2b2c122c30b14f430abeb1ece3cc44e0d32
+      - path: selfloc_39c1271/sw/deployments/department.csv
+        sha256: dcd33d715814ee407112e4ca5324580e4d6a413acf854b825647bc30f98ae166
+      - path: selfloc_39c1271/sw/deployments/reception.csv
+        sha256: 3b548cd6253788f438cd0832a381afed145a464bd07ccaffcfd89e68b617a214
+      - path: selfloc_39c1271/sw/deployments/plant.csv
+        sha256: 4e32fd33a53054f22afb6c1282b336a618bc40e51068b48a357c2f60fe1befd9
+        use: not converted (PLANT has no timestamps)
+      - path: selfloc_39c1271/README.md
+        sha256: 5d4bd753f350f53ef074d52aa7ef10873faba50c60046b64f60ab092a8969314
+      - path: selfloc_39c1271/sw/README.md
+        sha256: ca3db48fd752e3bf2f958c4e0ae3ec00409925f59d90499bae34e0d8ce302000

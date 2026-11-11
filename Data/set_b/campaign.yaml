@@ -1,0 +1,48 @@
+campaign: set_b
+title: Torgau UWB anchor-calibration campaign, 2025-10-22
+location: Torgau, Saxony, Germany (industrial hall, the hall of set_a)
+date: '2025-10-22'
+hardware: Qorvo/Decawave MDEK1001 (DWM1001) UWB, two-way ranging, 11-node mesh
+groundtruth: Vicon motion capture (mobile node), Total Station survey (anchors)
+nodes:
+  anchors:
+  - '4197'
+  - '4503'
+  - 4A23
+  - 4AA4
+  - '5388'
+  - 5BB6
+  - 8AA5
+  - 8B05
+  - '9911'
+  - D38F
+  mobile: DD98
+  excluded:
+  - D5B4
+notes:
+- 'Range stream: full-rate backup logs (~12.5 Hz); MQTT DBs hold a subsampled duplicate.'
+- All timestamps unified onto the Vicon (tracking PC) clock; broker receive times
+  are contaminated by logger queueing and only used for min-envelope offset estimation.
+- Distance matrices are directed (row = measuring node); symmetrize in the loader.
+- 'Vicon -> local ENU registration: wand tie from the surveyed control points WAND-0-0
+  (Vicon origin, incl. height) and WAND-001 (Vicon +y axis), yaw about the vertical,
+  scale 1, one transform for s01 and s02. Independent of the UWB ranges; Code/methods/estimate_vicon_transform.py
+  fits a UWB-based transform as a cross-check.'
+sources:
+- path: dyn_torgau_1.log
+  sha256: e89287433d777f2d0f7bcd7e2a2b4dba4c564e9f24ba044b39fe88874025408b
+- path: dyn_torgau_2.log
+  sha256: dfe71775e62adb881ad53cd6306f72f3369c4c9749e918a8bd779a92135a615e
+- path: stat_torgau.log
+  sha256: 1fd6056751d89464270c45d89296a6f1e8b393a58fd873953f25fd1538fb3618
+- path: autopos_run1.db
+  sha256: 04a596276a3b2b18e64affd3f2716613471a75b0b0e95ae50725e9ac63bbbb43
+  sha256_archived: 4c4e1d513859e944b68fed56a20a639c0de6265377c32aef493f4ce6f3418d51
+- path: autopos_run2.db
+  sha256: 1cc278fbbbd31ca2193f81039c01a7aff050a2a384d5f46ff21f788377003d77
+  sha256_archived: bea4a57629be6249d19f3d335999e3cb2912cdc691daa3894901a19eccee9782
+- path: autopos_run3_static.db
+  sha256: 5a0aa5ff734f4df5b5777f1ffc80552981ec9d5d64b1cbecce967f7f98b1d759
+  sha256_archived: 7cdcf01a5e6700836decb38d2fa169091d77bd252848336c647f2846655c8f9b
+- path: Tag2_TORGAU-22102025.txt
+  sha256: 6233c3bc129281a6b6246a263c89ec8e2c35688ce86c284648409468abf58ffa

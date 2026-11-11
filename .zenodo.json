@@ -1,0 +1,83 @@
+{
+  "upload_type": "software",
+  "access_right": "open",
+  "title": "radiocal: reference implementations and result tables for infrastructure self-calibration",
+  "creators": [
+    {
+      "name": "Schwarzbach, Paul",
+      "affiliation": "Chair of Transport Systems Information Technology, TUD Dresden University of Technology",
+      "orcid": "0000-0002-1091-782X"
+    }
+  ],
+  "description": "<p>The release of the tutorial <em>A Tutorial on Infrastructure Self-Calibration for Radio-Based Indoor Positioning</em> (under review, IEEE Communications Surveys &amp; Tutorials). It holds the reference implementations of the tutorial's engines with their driver, the result tables of its examples, the record of its literature search, and a copy of the measured sessions of the UWB Anchor Self-Calibration Dataset (UWB-ASC) and of its code. The implementations are a closed form, multidimensional scaling, a factor graph, also with anchor priors and with range-offset states, an extended Kalman filter (EKF), a particle filter, a grid filter, and EKF and factor-graph estimators of simultaneous localization and mapping (SLAM), with shared robust kernels and one noise scale per session. The driver runs each implementation on the topology views it applies to, and a runner evaluates public range recordings that the readers of UWB-ASC convert. A regression gate and the pinned environment of the result tables come with them.</p><p>The data descriptor of UWB-ASC (preprint arXiv:2611.11579) documents the deployments and their ground truth, and UWB-ASC's Zenodo record (https://doi.org/10.5281/zenodo.24055896) archives the sessions, the raw recordings and the scripts that rebuild the sessions.</p><p>License: the source code is licensed under MIT (LICENSE-CODE). Everything under Data/, Code/methods/results/ and docs/, the literature record included, is licensed under CC BY 4.0 (LICENSE-DATA).</p>",
+  "license": "mit",
+  "notes": "Code under MIT (LICENSE-CODE, and NOTICE for the copied code of UWB-ASC), data, result tables, literature record and documentation under CC BY 4.0 (LICENSE-DATA). Version 1.0.0 is the first release. CHANGELOG.md lists the changes of each version.",
+  "keywords": [
+    "ultra-wideband (UWB)",
+    "anchor self-calibration",
+    "auto-positioning",
+    "network localization",
+    "infrastructure calibration",
+    "indoor positioning",
+    "reference implementations",
+    "factor graph",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "relation": "cites",
+      "identifier": "10.1109/ACCESS.2026.3680224",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isDerivedFrom",
+      "identifier": "10.5281/zenodo.24055896",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "relation": "cites",
+      "identifier": "10.48550/arXiv.2611.11579",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.5281/zenodo.20277908",
+      "resource_type": "dataset",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1109/IEEEDATA.2026.3701019",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "https://github.com/d3s-trento/selfloc/tree/39c127198a5247dda60e7e711969a286053bac35",
+      "resource_type": "dataset",
+      "scheme": "url"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1109/ACCESS.2023.3261567",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "relation": "references",
+      "identifier": "10.1109/JSEN.2021.3121627",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/PaulSchwarzbach/radiocal/tree/v1.0.0",
+      "resource_type": "software",
+      "scheme": "url"
+    }
+  ],
+  "version": "1.0.0"
+}

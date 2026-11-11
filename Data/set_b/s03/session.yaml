@@ -1,0 +1,35 @@
+session_id: s03
+campaign: set_b
+motion: static
+t_start: 1761140574.76325
+t_end: 1761140742.6572104
+sources:
+- path: stat_torgau.log
+  role: ranges
+  sha256: 1fd6056751d89464270c45d89296a6f1e8b393a58fd873953f25fd1538fb3618
+- path: autopos_run3_static.db
+  role: groundtruth+clock
+  sha256: 5a0aa5ff734f4df5b5777f1ffc80552981ec9d5d64b1cbecce967f7f98b1d759
+  sha256_archived: 7cdcf01a5e6700836decb38d2fa169091d77bd252848336c647f2846655c8f9b
+clock:
+  reference: vicon_timestamp
+  offset_s: 6.863610744476318
+  uncertainty_s: 0.1
+  n_matched: 327
+  min_env_qorvo_s: 6.984831094741821
+  min_env_vicon_s: 0.12122035026550293
+  queue_lag_median_s: 41.436668395996094
+  queue_lag_max_s: 49.14363956451416
+  method: min_envelope
+counts:
+  range_epochs: 2080
+  directed_ranges: 191423
+  dropped_invalid: 185
+  truth_poses: 3087
+vicon:
+  topic: tracking/objects/torgau-final-autopos
+  object: torgau-final-autopos
+  node_id: DD98
+  frame: vicon_local
+  rate_hz: 23.46
+transform_vicon_to_local: null

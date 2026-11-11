@@ -1,0 +1,79 @@
+campaign: set_a
+title: Torgau UWB auto-positioning campaign, 2025-03-13 (tachymeter-referenced)
+date: '2025-03-13'
+location: Torgau, Saxony, Germany
+hardware: Qorvo/Decawave MDEK1001 UWB, two-way ranging, fully-meshed 12-node network
+groundtruth: 'Total Station (tachymeter): all node positions + roving-tag markers
+  P01..P20'
+nodes:
+  anchors:
+  - '4197'
+  - '4503'
+  - 4A23
+  - 4AA4
+  - '5388'
+  - 5BB6
+  - 8AA5
+  - '9911'
+  - D38F
+  - D5B4
+  - DD98
+  roving_tag: 8B05
+  excluded: []
+notes:
+- 12 surveyed nodes; D5B4 ranges in this campaign (unlike set_b); DD98 is static here.
+- 's01..s20: 8B05 quasi-static at surveyed marker PXX on a tripod; other nodes static.'
+- 'Tag antenna 1.72 m above the P-marker (groundtruth z = marker z + 1.72): robust
+  joint fit of height and common range bias (+0.22 m) over the tag-anchor ranges;
+  the surveyed 8B05 antenna of s21/s22 stands the same height above marker P01.'
+- 'truth_quality: 20/20 verified. Screen = 2-D multilateration vs marker (< 1 m);
+  flagged sessions (s05, s12) were decided by the direct range test at the marker.
+  Statistics in truth_adjudication.csv.'
+- Log records carry no timestamps; epoch ordering via seq.
+sources:
+- path: stat_1.log
+  sha256: da21f5574f1dce707f9aa80081a2cfaf5a50685789b6573c3294f600269c1f81
+- path: stat_2.log
+  sha256: 57eabfb238f085acc06fba17529e42daf038a5cf54eb5096390f03a1c2e57d83
+- path: dyn_p01.log
+  sha256: 523a1016da5db4b9959f5f1eaf27030da5ed2b7df86fda004158233f4f8c715f
+- path: dyn_p02.log
+  sha256: 6c34a3e0e6367edbe7637305e827c5f1107c435adb6f7c81451243762e034ef0
+- path: dyn_p03.log
+  sha256: 7b4d84abb9f7766567293b4ac9d5080e5a5f35936783c89fddb4970ac1ea21c4
+- path: dyn_p04.log
+  sha256: 1ea6474a161256b080d6189207de355787bc79337390a51c22df22c0e40708ad
+- path: dyn_p05.log
+  sha256: db419e88174f01308e441726ef40d8e134da1997e7387f73e1a28ec3f18410fc
+- path: dyn_p06.log
+  sha256: 01430ce2da9862b6059cf9c685a1748811da93d1abef2a9a94f8a21006ea8579
+- path: dyn_p07.log
+  sha256: 9a88ff0cd0bf8bad85c2e99ad891716f5ca865f971e6059f748f3ff63946f906
+- path: dyn_p08.log
+  sha256: 5af34103dcbf05504be2966d17e9217a6e943c88ad15a141bfc16c5edecd2253
+- path: dyn_p09.log
+  sha256: f73b6a54aeacc66ac9d18c1d6871bd9c0653d896368b3ab9eaea7afe553db92e
+- path: dyn_p10.log
+  sha256: 67e7c12639b763910618c9d9b66c1ece56d2530cb6a36b2f5d5a775497a74d14
+- path: dyn_p11.log
+  sha256: ebb1765142c7ae3fe3235c3aeca62b91a215c708def62f0f4dbc29e930a2beb4
+- path: dyn_p12.log
+  sha256: 587b74b1eb1a017713f34299b4bc25cf62aad302dcd846aea5660f46a0cfb988
+- path: dyn_p13.log
+  sha256: 7bfffabcace7078431a571fc34558942cfff22256c4a3e53c0457af83e355579
+- path: dyn_p14.log
+  sha256: 6ba67b88ca1fb9eae7cc52076ce14d1564c3694a2b6e2ba8a5e211984ff8a96b
+- path: dyn_p15.log
+  sha256: dd15841e14a45acb2aeea212b5503f1f31ba3f96ef3f2d625c5ba9a6d3f38106
+- path: dyn_p16.log
+  sha256: 7200ce7f12272b876c6ff7107399fe1a5252cd1d630f419ac6817c3f1b75eeef
+- path: dyn_p17.log
+  sha256: ef7138496f1e8f59c6b145ede9676995c8e23c4155488dbb20d28610b36caf1c
+- path: dyn_p18.log
+  sha256: b8b94830844a313e3c3067472f36f4e73d58202093fa9e236809b6b37997fff9
+- path: dyn_p19.log
+  sha256: e60aa380322ff958dea105e4efe0e2f740e38c4e8d76a253f208ef50ef3bd613
+- path: dyn_p20.log
+  sha256: 9af06ac41b7fadbef2293cd4057310e64b36aca579d4d8e27e0f0a9bc1a11375
+- path: torgau_autopos_ref.txt
+  sha256: 574493b8c391a88cae62d84cedb698a56f64548d1c6700aab1746d0d76703a32

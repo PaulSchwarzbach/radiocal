@@ -1,0 +1,23 @@
+radiocal: reference implementations and result tables for infrastructure
+self-calibration
+Copyright (c) 2026 Paul Schwarzbach. The code is licensed under the MIT
+License (LICENSE-CODE).
+
+This repository holds a copy of parts of UWB-ASC 1.0.0, the UWB Anchor
+Self-Calibration Dataset (https://doi.org/10.5281/zenodo.24055896,
+https://github.com/PaulSchwarzbach/UWB-ASC-dataset). The copied code keeps
+UWB-ASC's MIT notice, which names the same holder and whose full text stands
+in Code/datasets/radiocal/LICENSE. It covers these files:
+
+  Code/datasets/radiocal/             the radiocal package
+  Code/methods/range_errors.py        the range simulator
+  Code/methods/synthetic.py
+  Code/external/readers/              the readers of public range recordings
+  Code/external/convert_external.py   the converter
+  Code/external/session_writer.py
+  Code/external/sources.yaml          the fetch list
+  Code/external/README.md             with revised pointers to the tutorial
+
+The copied measured sessions and their documentation under Data/ are
+licensed under CC BY 4.0 (LICENSE-DATA). This copy leaves out UWB-ASC's
+synthetic draws.

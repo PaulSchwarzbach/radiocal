@@ -1,0 +1,178 @@
+crs:
+  epsg: 25833
+  height_system: DE_DHHN2016
+  local_origin_utm:
+  - 361600.0
+  - 5715100.0
+  - 80.0
+  axes: x=East, y=North, z=Up (metres, local origin)
+nodes:
+- id: '4197'
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 28.351
+    - 61.453
+    - 4.567
+    sigma_m: 0.01
+- id: '4503'
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 26.785
+    - 46.938
+    - 4.556
+    sigma_m: 0.01
+- id: 4A23
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 34.112
+    - 51.734
+    - 4.557
+    sigma_m: 0.01
+- id: 4AA4
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 22.467
+    - 43.481
+    - 4.553
+    sigma_m: 0.01
+- id: '5388'
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 23.916
+    - 45.618
+    - 4.577
+    sigma_m: 0.01
+- id: 5BB6
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 19.147
+    - 41.333
+    - 4.553
+    sigma_m: 0.01
+- id: 8AA5
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 20.984
+    - 47.476
+    - 4.557
+    sigma_m: 0.01
+- id: 8B05
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 21.225
+    - 56.497
+    - 4.569
+    sigma_m: 0.01
+- id: '9911'
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 30.903
+    - 58.133
+    - 4.563
+    sigma_m: 0.01
+- id: D38F
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 18.355
+    - 54.839
+    - 4.537
+    sigma_m: 0.01
+- id: DD98
+  role: mobile
+  prior:
+    type: none
+  groundtruth:
+    source: vicon
+    object: torgau-final-autopos
+- id: D5B4
+  role: anchor
+  status: surveyed_never_ranging
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 17.476
+    - 45.136
+    - 4.553
+    sigma_m: 0.01
+control_points:
+- name: GCP-11
+  xyz_local:
+  - 31.153
+  - 45.714
+  - 1.859
+  n_shots: 2
+  spread_m: 0.0205
+- name: GCP-08
+  xyz_local:
+  - 20.501
+  - 57.389
+  - 2.945
+  n_shots: 2
+  spread_m: 0.0251
+- name: GCP-13
+  xyz_local:
+  - 27.805
+  - 60.757
+  - 2.9355
+  n_shots: 2
+  spread_m: 0.0088
+- name: GCP-12
+  xyz_local:
+  - 31.138
+  - 45.714
+  - 1.867
+  n_shots: 2
+  spread_m: 22.0013
+  conflict: true
+- name: '3'
+  xyz_local:
+  - 32.414
+  - 50.706
+  - 3.059
+  n_shots: 1
+  spread_m: 0.0
+- name: WAND-0-0
+  xyz_local:
+  - 26.871
+  - 53.63
+  - 2.927
+  n_shots: 1
+  spread_m: 0.0
+- name: WAND-001
+  xyz_local:
+  - 26.531
+  - 53.312
+  - 2.925
+  n_shots: 1
+  spread_m: 0.0

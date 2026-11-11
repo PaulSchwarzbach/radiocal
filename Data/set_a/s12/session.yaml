@@ -1,0 +1,43 @@
+session_id: s12
+campaign: set_a
+motion: quasi_static_point
+t_start: null
+t_end: null
+sources:
+- path: dyn_p12.log
+  role: ranges
+  sha256: 587b74b1eb1a017713f34299b4bc25cf62aad302dcd846aea5660f46a0cfb988
+clock:
+  reference: null
+  note: records carry no timestamps; use seq for epoch ordering
+counts:
+  range_epochs: 203
+  directed_ranges: 18596
+  dropped_invalid: 13
+  truth_poses: 1
+notes:
+- roving tag 8B05 on a tripod at surveyed marker P12; other nodes static
+- 'The screen flagged a 9.9 m deviation of the 2-D multilateration. The direct range
+  test at the marker passes: median line-of-sight residual +0.208 m, reference +0.158
+  to +0.251 m. Truth verified.'
+node_overrides:
+- id: 8B05
+  role: mobile
+  prior:
+    type: none
+truth_quality: verified
+verification:
+  screen:
+    method: robust_multilateration_xy_vs_marker
+    deviation_m: 9.93
+    passed: false
+  range_test:
+    method: range_residuals_vs_marker
+    tag_height_above_marker_m: 1.72
+    median_los_residual_m: 0.208
+    n_los_links: 6
+    n_links: 10
+    reference_range_m:
+    - 0.158
+    - 0.251
+    passed: true

@@ -1,0 +1,31 @@
+# Pinned environment of the radiocal 1.0.0 result tables.
+#
+# These are the versions of the author's environment, in which every shipped
+# table under Code/methods/results/ was last written (pandas 2.3.3 and pyarrow
+# 23.0.1, as the Parquet metadata records). Tested with Python 3.14.6 on
+# Windows 11. scipy 1.18 needs Python 3.12 or newer. On Python 3.10 and 3.11,
+# use the unpinned install of the README instead.
+#
+# From the repository root:
+#   pip install -r requirements.txt
+#   pip install -e "Code/datasets/radiocal[qa,methods]"
+#
+# The README section "What agrees across environments" states what this
+# environment reproduces.
+contourpy==1.3.3
+cycler==0.12.1
+fonttools==4.55.3
+kiwisolver==1.5.0
+matplotlib==3.10.8
+numpy==2.3.5
+packaging==24.2
+pandas==2.3.3
+pillow==12.3.0
+pyarrow==23.0.1
+pyparsing==3.2.1
+python-dateutil==2.9.0.post0
+pytz==2024.2
+PyYAML==6.0.2
+scipy==1.18.0
+six==1.17.0
+tzdata==2024.2

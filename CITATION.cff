@@ -1,0 +1,100 @@
+cff-version: 1.2.0
+message: >-
+  If you use this release, please cite the companion tutorial paper below
+  and the archived release, and cite UWB-ASC for the measured sessions (see
+  references). The code is licensed under MIT, and everything under Data/,
+  Code/methods/results/ and docs/, the literature record included, under
+  CC BY 4.0 (see LICENSE-CODE and LICENSE-DATA).
+title: "radiocal: reference implementations and result tables for infrastructure self-calibration"
+abstract: >-
+  The release of the tutorial "A Tutorial on Infrastructure Self-Calibration
+  for Radio-Based Indoor Positioning". It holds the reference implementations
+  of the tutorial's engines with their driver, the result tables of its
+  examples, the record of its literature search, and a copy of the measured
+  sessions of the UWB Anchor Self-Calibration Dataset (UWB-ASC) and of its
+  code. The implementations are a closed form, multidimensional scaling, a
+  factor graph, also with anchor priors and with range-offset states, an
+  extended Kalman filter (EKF), a particle filter, a grid filter, and EKF and
+  factor-graph estimators of simultaneous localization and mapping (SLAM),
+  with shared robust kernels and one noise scale per session. The driver runs
+  each implementation on the topology views it applies to, and a runner
+  evaluates public range recordings that the readers of UWB-ASC convert. A
+  regression gate and the pinned environment of the result tables come with
+  them. The data descriptor of UWB-ASC documents the deployments and their
+  ground truth, and UWB-ASC's Zenodo record
+  (https://doi.org/10.5281/zenodo.24055896) archives the sessions, the raw
+  recordings and the scripts that rebuild the sessions.
+type: software
+# CFF reads a list of licenses as alternatives, which would offer the data
+# under MIT, so only the license of the software stands here. The message
+# and the README's Licenses section name the data license.
+license: MIT
+authors:
+  - family-names: Schwarzbach
+    given-names: Paul
+    orcid: "https://orcid.org/0000-0002-1091-782X"
+    affiliation: "Chair of Transport Systems Information Technology, TUD Dresden University of Technology"
+version: "1.0.0"
+date-released: "2026-11-11"
+doi: "10.5281/zenodo.24134343"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24134343"
+    description: "The version DOI of version 1.0.0 on Zenodo."
+  - type: doi
+    value: "10.5281/zenodo.24134342"
+    description: "The concept DOI of all versions on Zenodo, which resolves to the latest version."
+repository-code: "https://github.com/PaulSchwarzbach/radiocal"
+keywords:
+  - "ultra-wideband (UWB)"
+  - anchor self-calibration
+  - auto-positioning
+  - network localization
+  - infrastructure calibration
+  - indoor positioning
+  - reference implementations
+  - factor graph
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "A Tutorial on Infrastructure Self-Calibration for Radio-Based Indoor Positioning"
+  authors:
+    - family-names: Schwarzbach
+      given-names: Paul
+      orcid: "https://orcid.org/0000-0002-1091-782X"
+  journal: "IEEE Communications Surveys & Tutorials"
+  year: 2026
+  # PLACEHOLDER: status/DOI once the manuscript is accepted
+  notes: "Under review."
+references:
+  - type: article
+    title: "Terminology Fragmentation of Infrastructure Calibration in Radio-Based Indoor Positioning: A Systematic Review"
+    authors:
+      - family-names: Schwarzbach
+        given-names: Paul
+    journal: "IEEE Access"
+    volume: 14
+    year: 2026
+    doi: "10.1109/ACCESS.2026.3680224"
+  - type: data
+    title: "UWB Anchor Self-Calibration Dataset (UWB-ASC)"
+    authors:
+      - family-names: Schwarzbach
+        given-names: Paul
+        orcid: "https://orcid.org/0000-0002-1091-782X"
+    publisher:
+      name: "Zenodo"
+    version: "1.0.0"
+    year: 2026
+    doi: "10.5281/zenodo.24055896"
+    notes: "This release holds a copy of its measured sessions (Data/set_a, Data/set_b) and of its code."
+  - type: article
+    title: "Descriptor: UWB Anchor Self-Calibration Dataset (UWB-ASC)"
+    authors:
+      - family-names: Schwarzbach
+        given-names: Paul
+        orcid: "https://orcid.org/0000-0002-1091-782X"
+    year: 2026
+    doi: "10.48550/arXiv.2611.11579"
+    url: "https://arxiv.org/abs/2611.11579"
+    notes: "Preprint arXiv:2611.11579 [eess.SP], submitted to IEEE Data Descriptions."

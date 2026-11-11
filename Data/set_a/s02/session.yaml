@@ -1,0 +1,40 @@
+session_id: s02
+campaign: set_a
+motion: quasi_static_point
+t_start: null
+t_end: null
+sources:
+- path: dyn_p02.log
+  role: ranges
+  sha256: 6c34a3e0e6367edbe7637305e827c5f1107c435adb6f7c81451243762e034ef0
+clock:
+  reference: null
+  note: records carry no timestamps; use seq for epoch ordering
+counts:
+  range_epochs: 221
+  directed_ranges: 21474
+  dropped_invalid: 13
+  truth_poses: 1
+notes:
+- roving tag 8B05 on a tripod at surveyed marker P02; other nodes static
+node_overrides:
+- id: 8B05
+  role: mobile
+  prior:
+    type: none
+truth_quality: verified
+verification:
+  screen:
+    method: robust_multilateration_xy_vs_marker
+    deviation_m: 0.219
+    passed: true
+  range_test:
+    method: range_residuals_vs_marker
+    tag_height_above_marker_m: 1.72
+    median_los_residual_m: 0.205
+    n_los_links: 10
+    n_links: 10
+    reference_range_m:
+    - 0.158
+    - 0.251
+    passed: true

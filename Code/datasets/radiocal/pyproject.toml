@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]  # 77: the SPDX licence string below
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radiocal"
+version = "1.0.0"
+description = "Measurement-graph dataset tooling for radio infrastructure calibration (Torgau UWB campaigns)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Paul Schwarzbach" }]
+dependencies = [
+    "numpy>=1.24",
+    # pandas 3 slows the companion tutorial's benchmark down many times (the
+    # README of its release, "Runtimes")
+    "pandas>=2.0,<3",
+    "pyarrow>=14",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+qa = ["matplotlib>=3.7"]
+methods = ["scipy>=1.11", "matplotlib>=3.7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# the four canonical topology masks (radiocal.masks)
+[tool.setuptools.package-data]
+radiocal = ["mask_specs/*.yaml"]

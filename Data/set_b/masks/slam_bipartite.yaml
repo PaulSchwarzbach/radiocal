@@ -1,0 +1,14 @@
+name: slam_bipartite
+description: >
+  Mobile-only (bipartite) view: only mobile<->anchor ranges, and the anchors
+  carry no positional priors, so the trajectory is estimated jointly and the
+  SLAM estimators apply. The view keeps the mobile trajectory (Vicon) for
+  evaluation only, and no estimator of the benchmark reads it. Evaluation:
+  anchor RMSE after alignment, plus mobile ATE/RPE against Vicon.
+edges:
+  keep:
+    - {from_role: mobile, to_role: anchor}
+    - {from_role: anchor, to_role: mobile}
+  thin: null
+priors: none
+groundtruth: motion_only

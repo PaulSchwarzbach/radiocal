@@ -1,0 +1,37 @@
+src: vicon
+dst: enu
+scale: 1.0
+rotation:
+- [-0.7021021358461634, -0.7120762535292516, 0.0]
+- [0.7120762535292515, -0.7021021358461637, 0.0]
+- [0.0, 0.0, 1.0]
+translation: [26.890283138907208, 53.711308584629016, 1.822843498882883]
+model: y = scale * R @ x + t
+provenance:
+  script: estimate_vicon_transform.py
+  date: '2026-09-30'
+  session: set_b/s01
+  parameterization: planar_yaw_plus_z_offset
+  sigma_m: 0.13116086577873987
+  n_epochs_multilaterated: 3358
+  n_epochs_kept: 2550
+  rms_gate_m: 0.3934825973362196
+  n_matched: 400
+  n_inliers: 388
+  yaw_deg: 134.5959029098651
+  residual_rmse_m: {x: 0.16569441092225762, y: 0.1381453534465242, z: 0.4105903675163962,
+    xy: 0.21572847862472652, xyz: 0.46381378417096286}
+  residual_rmse_3d_fit_m: {x: 0.1640809365502525, y: 0.1234300849300969, z: 0.1736456524123086,
+    xy: 0.2053230128481923, xyz: 0.26890584264153733}
+  yaw_3d_deg: 134.49138460307944
+  roll_3d_deg: 2.076984050731272
+  pitch_3d_deg: -0.20942644749084902
+  mlat_resid_rms_median_m: 0.19425516750794514
+  role: cross-check; the canonical registration is the wand tie in session.yaml
+  wand_comparison:
+    wand_method: wand_tie
+    delta_yaw_deg: 1.5108539239072059
+    delta_t_m: [0.019283138907209008, 0.08130858462901358, -1.104156501117117]
+    delta_t_xy_m: 0.08356389998371415
+    xy_rmse_uwb_fit_m: 0.22500137635163936
+    xy_rmse_wand_tie_m: 0.27678861648344255

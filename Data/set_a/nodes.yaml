@@ -1,0 +1,288 @@
+crs:
+  epsg: null
+  note: campaign-local tachymeter frame (metres); not georeferenced
+  axes: x, y, z as surveyed (anchor z ~ tripod antenna height, P-marker z = ground
+    marker; the tag antenna stood on a tripod above the marker, see campaign.yaml)
+nodes:
+- id: '4197'
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 8.179
+    - -3.579
+    - 1.301
+    sigma_m: 0.01
+- id: '4503'
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 7.875
+    - 12.034
+    - 1.337
+    sigma_m: 0.01
+- id: 4A23
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -3.473
+    - -3.95
+    - 1.252
+    sigma_m: 0.01
+- id: 4AA4
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -26.991
+    - 3.368
+    - 1.293
+    sigma_m: 0.01
+- id: '5388'
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -7.421
+    - 23.169
+    - 1.312
+    sigma_m: 0.01
+- id: 5BB6
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -27.373
+    - -4.102
+    - 1.289
+    sigma_m: 0.01
+- id: 8AA5
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -15.153
+    - 19.145
+    - 1.312
+    sigma_m: 0.01
+- id: 8B05
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - 7.488
+    - 4.16
+    - 1.31
+    sigma_m: 0.01
+- id: '9911'
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -27.945
+    - 11.167
+    - 1.307
+    sigma_m: 0.01
+- id: D38F
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -12.012
+    - 11.105
+    - 1.262
+    sigma_m: 0.01
+- id: D5B4
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -2.208
+    - 23.279
+    - 1.234
+    sigma_m: 0.01
+- id: DD98
+  role: anchor
+  prior:
+    type: surveyed
+    source: totalstation
+    xyz_local:
+    - -12.352
+    - -4.105
+    - 1.266
+    sigma_m: 0.01
+control_points:
+- name: P01
+  xyz_local:
+  - 7.542
+  - 4.161
+  - -0.409
+  n_shots: 1
+  spread_m: 0.0
+- name: P02
+  xyz_local:
+  - 4.69
+  - 4.131
+  - -0.431
+  n_shots: 1
+  spread_m: 0.0
+- name: P03
+  xyz_local:
+  - 3.314
+  - 1.878
+  - -0.431
+  n_shots: 1
+  spread_m: 0.0
+- name: P04
+  xyz_local:
+  - 3.44
+  - -2.061
+  - -0.448
+  n_shots: 1
+  spread_m: 0.0
+- name: P05
+  xyz_local:
+  - -0.08
+  - -3.67
+  - -0.438
+  n_shots: 1
+  spread_m: 0.0
+- name: P06
+  xyz_local:
+  - -3.485
+  - 1.398
+  - -0.438
+  n_shots: 1
+  spread_m: 0.0
+- name: P07
+  xyz_local:
+  - -3.588
+  - 7.768
+  - -0.428
+  n_shots: 1
+  spread_m: 0.0
+- name: P08
+  xyz_local:
+  - -3.403
+  - 11.99
+  - -0.444
+  n_shots: 1
+  spread_m: 0.0
+- name: P09
+  xyz_local:
+  - -3.389
+  - 17.533
+  - -0.459
+  n_shots: 1
+  spread_m: 0.0
+- name: P10
+  xyz_local:
+  - -6.331
+  - 21.802
+  - -0.425
+  n_shots: 1
+  spread_m: 0.0
+- name: P11
+  xyz_local:
+  - -11.792
+  - 16.931
+  - -0.443
+  n_shots: 1
+  spread_m: 0.0
+- name: P12
+  xyz_local:
+  - -13.346
+  - 21.257
+  - -0.424
+  n_shots: 1
+  spread_m: 0.0
+- name: P13
+  xyz_local:
+  - -12.821
+  - 7.756
+  - -0.435
+  n_shots: 1
+  spread_m: 0.0
+- name: P14
+  xyz_local:
+  - -16.171
+  - 2.765
+  - -0.43
+  n_shots: 1
+  spread_m: 0.0
+- name: P15
+  xyz_local:
+  - -19.021
+  - -3.357
+  - -0.437
+  n_shots: 1
+  spread_m: 0.0
+- name: P16
+  xyz_local:
+  - -24.205
+  - -3.263
+  - -0.434
+  n_shots: 1
+  spread_m: 0.0
+- name: P17
+  xyz_local:
+  - -20.766
+  - 3.661
+  - -0.424
+  n_shots: 1
+  spread_m: 0.0
+- name: P18
+  xyz_local:
+  - -25.295
+  - 8.06
+  - -0.433
+  n_shots: 1
+  spread_m: 0.0
+- name: P19
+  xyz_local:
+  - -19.377
+  - 12.316
+  - -0.452
+  n_shots: 1
+  spread_m: 0.0
+- name: P20
+  xyz_local:
+  - 4.944
+  - 10.069
+  - -0.447
+  n_shots: 1
+  spread_m: 0.0
+- name: REFP01
+  xyz_local:
+  - 7.602
+  - 8.137
+  - -0.419
+  n_shots: 1
+  spread_m: 0.0
+- name: REFP02
+  xyz_local:
+  - 6.724
+  - 0.133
+  - -0.418
+  n_shots: 1
+  spread_m: 0.0
+- name: REFP03
+  xyz_local:
+  - 13.148
+  - -1.417
+  - -1.562
+  n_shots: 1
+  spread_m: 0.0

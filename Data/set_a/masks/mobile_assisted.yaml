@@ -1,0 +1,15 @@
+name: mobile_assisted
+description: >
+  Mobile-assisted / semi-blind view: full anchor mesh plus mobile<->anchor
+  ranges; a minimal subset of anchors keeps its surveyed prior (fixes the
+  global frame), all others are unknown. Subset choice ('5BB6', '4A23',
+  '8B05': a well-spread triangle) is a convention of this benchmark.
+edges:
+  keep:
+    - {from_role: anchor, to_role: anchor}
+    - {from_role: mobile, to_role: anchor}
+    - {from_role: anchor, to_role: mobile}
+  thin: null
+priors:
+  subset: ["5BB6", "4A23", "8B05"]
+groundtruth: motion_only

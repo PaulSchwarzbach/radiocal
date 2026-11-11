@@ -1,0 +1,17 @@
+session_id: s21
+campaign: set_a
+motion: static
+t_start: null
+t_end: null
+sources:
+- path: stat_1.log
+  role: ranges
+  sha256: da21f5574f1dce707f9aa80081a2cfaf5a50685789b6573c3294f600269c1f81
+clock:
+  reference: null
+  note: records carry no timestamps; use seq for epoch ordering
+counts:
+  range_epochs: 3640
+  directed_ranges: 351263
+  dropped_invalid: 326
+  truth_poses: 0

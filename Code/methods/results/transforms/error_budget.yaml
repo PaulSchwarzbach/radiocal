@@ -1,0 +1,198 @@
+set_b:
+  s01:
+    registration:
+      delta_yaw_deg: 1.511
+      delta_t_xy_m: 0.084
+      delta_z_m: -1.104
+      mlat_xy_rmse_uwb_fit_m: 0.225
+      mlat_xy_rmse_wand_tie_m: 0.277
+      ate_fg_slam_cauchy_wand_tie_m: 0.149
+      ate_fg_slam_cauchy_uwb_fit_m: 0.192
+    wand_baseline:
+      baseline_m: 0.466
+      nominal_point_sigma_m: 0.002
+      yaw_sigma_deg: 0.348
+      radius_p95_m: 12.01
+      effect_at_radius_p95_m: 0.073
+    clock:
+      offset_uncertainty_s: 0.1
+      vicon_speed_median_mps: 0.09
+      vicon_speed_p95_mps: 0.8
+      effect_median_m: 0.009
+      effect_p95_m: 0.08
+    coverage:
+      epochs: 3362
+      covered: 655
+      share: 0.195
+      estimate_speed_covered_mps: 0.06
+      estimate_speed_uncovered_mps: 0.52
+      bursts: 28
+      burst_median_s: 1.44
+      burst_max_s: 7.03
+      gap_max_s: 36.1
+      vicon_rate_across_gaps_hz:
+      - 119.7
+      - 120.0
+      vicon_unit_steps_in_bursts: 0.998
+      stationary_threshold_mps: 0.2
+      stationary_share_all: 0.42
+      stationary_share_covered: 0.55
+      range_resid_truth_m: 0.246
+      cells:
+        fg_slam_gaussian:
+          ate_m: 0.517
+          ate_moving_m: 0.32
+          ate_stationary_m: 0.633
+          ate_reweighted_m: 0.476
+          range_resid_covered_m: 0.273
+          range_resid_uncovered_m: 0.286
+        fg_slam_huber:
+          ate_m: 0.158
+          ate_moving_m: 0.151
+          ate_stationary_m: 0.163
+          ate_reweighted_m: 0.156
+          range_resid_covered_m: 0.23
+          range_resid_uncovered_m: 0.235
+        fg_slam_cauchy:
+          ate_m: 0.149
+          ate_moving_m: 0.152
+          ate_stationary_m: 0.147
+          ate_reweighted_m: 0.15
+          range_resid_covered_m: 0.237
+          range_resid_uncovered_m: 0.231
+        ekf_slam_gaussian:
+          ate_m: 4.983
+          ate_moving_m: 5.291
+          ate_stationary_m: 4.719
+          ate_reweighted_m: 5.061
+          range_resid_covered_m: 1.61
+          range_resid_uncovered_m: 2.912
+        ekf_slam_huber:
+          ate_m: 3.298
+          ate_moving_m: 3.256
+          ate_stationary_m: 3.331
+          ate_reweighted_m: 3.287
+          range_resid_covered_m: 1.26
+          range_resid_uncovered_m: 1.277
+        ekf_slam_cauchy:
+          ate_m: 2.507
+          ate_moving_m: 2.408
+          ate_stationary_m: 2.585
+          ate_reweighted_m: 2.483
+          range_resid_covered_m: 1.11
+          range_resid_uncovered_m: 1.041
+  s02:
+    registration:
+      delta_yaw_deg: 0.816
+      delta_t_xy_m: 0.056
+      delta_z_m: -1.361
+      mlat_xy_rmse_uwb_fit_m: 0.237
+      mlat_xy_rmse_wand_tie_m: 0.27
+      ate_fg_slam_cauchy_wand_tie_m: 0.136
+      ate_fg_slam_cauchy_uwb_fit_m: 0.149
+    wand_baseline:
+      baseline_m: 0.466
+      nominal_point_sigma_m: 0.002
+      yaw_sigma_deg: 0.348
+      radius_p95_m: 11.27
+      effect_at_radius_p95_m: 0.068
+    clock:
+      offset_uncertainty_s: 0.1
+      vicon_speed_median_mps: 0.4
+      vicon_speed_p95_mps: 0.68
+      effect_median_m: 0.04
+      effect_p95_m: 0.068
+    coverage:
+      epochs: 3384
+      covered: 688
+      share: 0.203
+      estimate_speed_covered_mps: 0.46
+      estimate_speed_uncovered_mps: 0.57
+      bursts: 25
+      burst_median_s: 1.69
+      burst_max_s: 8.18
+      gap_max_s: 36.8
+      vicon_rate_across_gaps_hz:
+      - 119.9
+      - 120.0
+      vicon_unit_steps_in_bursts: 0.999
+      stationary_threshold_mps: 0.2
+      stationary_share_all: 0.27
+      stationary_share_covered: 0.42
+      range_resid_truth_m: 0.248
+      cells:
+        fg_slam_gaussian:
+          ate_m: 0.648
+          ate_moving_m: 0.731
+          ate_stationary_m: 0.51
+          ate_reweighted_m: 0.679
+          range_resid_covered_m: 0.281
+          range_resid_uncovered_m: 0.287
+        fg_slam_huber:
+          ate_m: 0.16
+          ate_moving_m: 0.164
+          ate_stationary_m: 0.153
+          ate_reweighted_m: 0.161
+          range_resid_covered_m: 0.238
+          range_resid_uncovered_m: 0.237
+        fg_slam_cauchy:
+          ate_m: 0.136
+          ate_moving_m: 0.144
+          ate_stationary_m: 0.123
+          ate_reweighted_m: 0.139
+          range_resid_covered_m: 0.232
+          range_resid_uncovered_m: 0.231
+        ekf_slam_gaussian:
+          ate_m: 1.099
+          ate_moving_m: 1.214
+          ate_stationary_m: 0.914
+          ate_reweighted_m: 1.141
+          range_resid_covered_m: 0.322
+          range_resid_uncovered_m: 0.29
+        ekf_slam_huber:
+          ate_m: 0.413
+          ate_moving_m: 0.356
+          ate_stationary_m: 0.48
+          ate_reweighted_m: 0.393
+          range_resid_covered_m: 0.249
+          range_resid_uncovered_m: 0.238
+        ekf_slam_cauchy:
+          ate_m: 0.429
+          ate_moving_m: 0.37
+          ate_stationary_m: 0.499
+          ate_reweighted_m: 0.409
+          range_resid_covered_m: 0.263
+          range_resid_uncovered_m: 0.241
+  s03:
+    coverage:
+      epochs: 1927
+      covered: 324
+      share: 0.168
+      bursts: 18
+      burst_median_s: 1.21
+      burst_max_s: 7.01
+      gap_max_s: 9.1
+      vicon_rate_across_gaps_hz:
+      - 119.8
+      - 120.1
+      vicon_unit_steps_in_bursts: 0.986
+set_a:
+  tag_height_above_marker_m: 1.72
+  common_range_bias_m: 0.216
+  surveyed_8B05_antenna_above_P01_m: 1.719
+  sessions_verified: 20
+  sessions: 20
+nominal:
+  total_station:
+    instrument: Leica TS16 (angle class of the unit not recorded)
+    distance_prism: 1 mm + 1.5 ppm
+    distance_reflectorless: 2 mm + 2 ppm
+    angle: 1" to 5" by instrument class
+    source: Leica Viva TS16 data sheet, https://leica-geosystems.com/-/media/files/leicageosystems/products/datasheets/leica_viva_ts16_ds.ashx
+  uwb_module:
+    module: Qorvo/Decawave DWM1001 (MDEK1001 kit)
+    ranging_accuracy: to within 10 cm
+    antenna_delay: pre-calibrated per design and stored in OTP; per-module calibration
+      recommended for greater accuracy
+    phase_centre: no figure given
+    source: DWM1001 data sheet v1.5 (Decawave 2017), https://store.qorvo.com/datasheets/qorvo/dwm1001datasheet.pdf

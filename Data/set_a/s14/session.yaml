@@ -1,0 +1,40 @@
+session_id: s14
+campaign: set_a
+motion: quasi_static_point
+t_start: null
+t_end: null
+sources:
+- path: dyn_p14.log
+  role: ranges
+  sha256: 6ba67b88ca1fb9eae7cc52076ce14d1564c3694a2b6e2ba8a5e211984ff8a96b
+clock:
+  reference: null
+  note: records carry no timestamps; use seq for epoch ordering
+counts:
+  range_epochs: 174
+  directed_ranges: 16322
+  dropped_invalid: 18
+  truth_poses: 1
+notes:
+- roving tag 8B05 on a tripod at surveyed marker P14; other nodes static
+node_overrides:
+- id: 8B05
+  role: mobile
+  prior:
+    type: none
+truth_quality: verified
+verification:
+  screen:
+    method: robust_multilateration_xy_vs_marker
+    deviation_m: 0.24
+    passed: true
+  range_test:
+    method: range_residuals_vs_marker
+    tag_height_above_marker_m: 1.72
+    median_los_residual_m: 0.221
+    n_los_links: 11
+    n_links: 11
+    reference_range_m:
+    - 0.158
+    - 0.251
+    passed: true

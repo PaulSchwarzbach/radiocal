@@ -1,0 +1,62 @@
+session_id: s01
+campaign: set_b
+motion: dynamic
+t_start: 1761139330.6541255
+t_end: 1761139615.2355075
+sources:
+- path: dyn_torgau_1.log
+  role: ranges
+  sha256: e89287433d777f2d0f7bcd7e2a2b4dba4c564e9f24ba044b39fe88874025408b
+- path: autopos_run1.db
+  role: groundtruth+clock
+  sha256: 04a596276a3b2b18e64affd3f2716613471a75b0b0e95ae50725e9ac63bbbb43
+  sha256_archived: 4c4e1d513859e944b68fed56a20a639c0de6265377c32aef493f4ce6f3418d51
+clock:
+  reference: vicon_timestamp
+  offset_s: 6.889471769332886
+  uncertainty_s: 0.1
+  n_matched: 668
+  min_env_qorvo_s: 6.997215986251831
+  min_env_vicon_s: 0.10774421691894531
+  queue_lag_median_s: 38.288174986839294
+  queue_lag_max_s: 54.54982662200928
+  method: min_envelope
+counts:
+  range_epochs: 3589
+  directed_ranges: 339258
+  dropped_invalid: 229
+  truth_poses: 6296
+vicon:
+  topic: tracking/objects/torgau-final-autopos
+  object: torgau-final-autopos
+  node_id: DD98
+  frame: vicon_local
+  rate_hz: 23.7
+transform_vicon_to_local:
+  src: vicon
+  dst: enu
+  scale: 1.0
+  rotation:
+  - - -0.6830832186473175
+    - -0.7303405482392588
+    - 0.0
+  - - 0.7303405482392588
+    - -0.6830832186473175
+    - 0.0
+  - - 0.0
+    - 0.0
+    - 1.0
+  translation:
+  - 26.871
+  - 53.63
+  - 2.927
+  model: y = scale * R @ x + t
+transform_provenance:
+  method: wand_tie
+  origin: WAND-0-0
+  y_axis: WAND-001
+  yaw_deg: 133.08504898595788
+  baseline_m: 0.4655362499311982
+  height_difference_m: -0.002000000000000224
+  note: survey-only registration, independent of the UWB ranges; estimate_vicon_transform.py
+    fits the UWB-based cross-check
