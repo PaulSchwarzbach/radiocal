@@ -2,8 +2,7 @@
 
 This folder holds the coded record of the 121 works read in full in the literature search of
 the companion paper, and the screening decisions of that search. The paper draws most of the
-works of its Fig. 2 (Section II-B) from this record, and its Acknowledgment states how the
-record was made.
+works of its Fig. 2 (Section II-B) from this record.
 
 | File | Content |
 |---|---|

@@ -674,11 +674,6 @@ command-line interface. The model versions were not pinned. The models
 helped develop the reference implementations with their driver, the
 evaluation behind the result tables, the run on the public scan, the summary
 scripts, the examples and the tests. The author set the content of the
-documentation, and the models formulated and edited its text. They also
-triaged and coded the literature record under `docs/corpus/`, and the author
-approved the works that Fig. 2 of the paper draws from it. UWB-ASC's data
-descriptor and README declare the use for its code, its documentation and
-its field labels, of which this release holds a copy. That code includes the
-conversion of the public scan and the port of the range-error generator. The
-author reviewed and revised the code and the documentation and takes full
+documentation, and the models formulated and edited its text. The author
+reviewed and revised the code and the documentation and takes full
 responsibility for the content of this repository.
