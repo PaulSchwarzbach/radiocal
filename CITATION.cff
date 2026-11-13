@@ -56,16 +56,17 @@ keywords:
   - factor graph
   - reproducibility
 preferred-citation:
-  type: article
+  # The preprint. At acceptance the journal entry with its DOI follows.
+  type: generic
   title: "A Tutorial on Infrastructure Self-Calibration for Radio-Based Indoor Positioning"
   authors:
     - family-names: Schwarzbach
       given-names: Paul
       orcid: "https://orcid.org/0000-0002-1091-782X"
-  journal: "IEEE Communications Surveys & Tutorials"
   year: 2026
-  # PLACEHOLDER: status/DOI once the manuscript is accepted
-  notes: "Under review."
+  doi: "10.48550/arXiv.2611.15503"
+  url: "https://arxiv.org/abs/2611.15503"
+  notes: "Preprint arXiv:2611.15503 [eess.SP], under review."
 references:
   - type: article
     title: "Terminology Fragmentation of Infrastructure Calibration in Radio-Based Indoor Positioning: A Systematic Review"

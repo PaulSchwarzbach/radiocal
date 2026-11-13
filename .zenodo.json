@@ -9,7 +9,7 @@
       "orcid": "0000-0002-1091-782X"
     }
   ],
-  "description": "<p>The release of the tutorial <em>A Tutorial on Infrastructure Self-Calibration for Radio-Based Indoor Positioning</em> (under review, IEEE Communications Surveys &amp; Tutorials). It holds the reference implementations of the tutorial's engines with their driver, the result tables of its examples, the record of its literature search, and a copy of the measured sessions of the UWB Anchor Self-Calibration Dataset (UWB-ASC) and of its code. The implementations are a closed form, multidimensional scaling, a factor graph, also with anchor priors and with range-offset states, an extended Kalman filter (EKF), a particle filter, a grid filter, and EKF and factor-graph estimators of simultaneous localization and mapping (SLAM), with shared robust kernels and one noise scale per session. The driver runs each implementation on the topology views it applies to, and a runner evaluates public range recordings that the readers of UWB-ASC convert. A regression gate and the pinned environment of the result tables come with them.</p><p>The data descriptor of UWB-ASC (preprint arXiv:2611.11579) documents the deployments and their ground truth, and UWB-ASC's Zenodo record (https://doi.org/10.5281/zenodo.24055896) archives the sessions, the raw recordings and the scripts that rebuild the sessions.</p><p>License: the source code is licensed under MIT (LICENSE-CODE). Everything under Data/, Code/methods/results/ and docs/, the literature record included, is licensed under CC BY 4.0 (LICENSE-DATA).</p>",
+  "description": "<p>The release of the tutorial <em>A Tutorial on Infrastructure Self-Calibration for Radio-Based Indoor Positioning</em> (preprint arXiv:2611.15503, under review). It holds the reference implementations of the tutorial's engines with their driver, the result tables of its examples, the record of its literature search, and a copy of the measured sessions of the UWB Anchor Self-Calibration Dataset (UWB-ASC) and of its code. The implementations are a closed form, multidimensional scaling, a factor graph, also with anchor priors and with range-offset states, an extended Kalman filter (EKF), a particle filter, a grid filter, and EKF and factor-graph estimators of simultaneous localization and mapping (SLAM), with shared robust kernels and one noise scale per session. The driver runs each implementation on the topology views it applies to, and a runner evaluates public range recordings that the readers of UWB-ASC convert. A regression gate and the pinned environment of the result tables come with them.</p><p>The data descriptor of UWB-ASC (preprint arXiv:2611.11579) documents the deployments and their ground truth, and UWB-ASC's Zenodo record (https://doi.org/10.5281/zenodo.24055896) archives the sessions, the raw recordings and the scripts that rebuild the sessions.</p><p>License: the source code is licensed under MIT (LICENSE-CODE). Everything under Data/, Code/methods/results/ and docs/, the literature record included, is licensed under CC BY 4.0 (LICENSE-DATA).</p>",
   "license": "mit",
   "notes": "Code under MIT (LICENSE-CODE, and NOTICE for the copied code of UWB-ASC), data, result tables, literature record and documentation under CC BY 4.0 (LICENSE-DATA). Version 1.0.0 is the first release. CHANGELOG.md lists the changes of each version.",
   "keywords": [
@@ -77,6 +77,12 @@
       "identifier": "https://github.com/PaulSchwarzbach/radiocal/tree/v1.0.0",
       "resource_type": "software",
       "scheme": "url"
+    },
+    {
+      "relation": "isSupplementTo",
+      "identifier": "10.48550/arXiv.2611.15503",
+      "resource_type": "publication-preprint",
+      "scheme": "doi"
     }
   ],
   "version": "1.0.0"

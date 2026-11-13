@@ -9,12 +9,12 @@ Where are my anchors? Radio positioning systems need the coordinates of
 their fixed infrastructure, and surveying them by hand is the part everyone
 would like to skip. This repository is the release of the tutorial paper
 *A Tutorial on Infrastructure Self-Calibration for Radio-Based Indoor
-Positioning* (under review, IEEE Communications Surveys & Tutorials). It
-holds the code and the result tables behind the paper's examples and the
-scripts that recompute those tables within the tolerances stated below. The
-scripts that compute the range residuals, the tables and the numbers of the
-paper's text and draw its figures stay with the manuscript (see
-*Reproducibility: code-to-paper mapping*). The repository contains
+Positioning* (preprint [arXiv:2611.15503](https://arxiv.org/abs/2611.15503),
+under review). It holds the code and the result tables behind the paper's
+examples and the scripts that recompute those tables within the tolerances
+stated below. The scripts that compute the range residuals, the tables and
+the numbers of the paper's text and draw its figures stay with the manuscript
+(see *Reproducibility: code-to-paper mapping*). The repository contains
 
 - the **reference implementations** of the paper's engines (a closed form,
   multidimensional scaling, a factor graph, also with anchor priors and with
@@ -53,8 +53,8 @@ and topologies are not confounded by different data.
 ## Companion paper
 
 > P. Schwarzbach, "A Tutorial on Infrastructure Self-Calibration for
-> Radio-Based Indoor Positioning," under review, *IEEE Communications
-> Surveys & Tutorials*, 2026.
+> Radio-Based Indoor Positioning," preprint, arXiv:2611.15503 [eess.SP],
+> 2026, under review. https://arxiv.org/abs/2611.15503
 
 Section II-D of the paper introduces the running example and the
 deployments of UWB-ASC, Section IV-C the topology views, Section V the
@@ -543,13 +543,16 @@ is archived on Zenodo under a version DOI, and the concept DOI
 If you use this release, cite the companion paper:
 
 ```bibtex
-@article{schwarzbach_selfcal_tutorial_2026,
-  author  = {Schwarzbach, Paul},
-  title   = {A Tutorial on Infrastructure Self-Calibration for Radio-Based
-             Indoor Positioning},
-  journal = {IEEE Communications Surveys \& Tutorials},
-  year    = {2026},
-  note    = {Under review}
+@misc{schwarzbach_selfcal_tutorial_2026,
+  author        = {Schwarzbach, Paul},
+  title         = {A Tutorial on Infrastructure Self-Calibration for
+                   Radio-Based Indoor Positioning},
+  year          = {2026},
+  eprint        = {2611.15503},
+  archivePrefix = {arXiv},
+  primaryClass  = {eess.SP},
+  doi           = {10.48550/arXiv.2611.15503},
+  note          = {Under review}
 }
 ```
 
